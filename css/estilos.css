@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 40px 0;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    grid-column: span 2;
+    resize: vertical;
+}
+
+.grupo-materiales {
+    grid-column: span 2;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.titulo-materiales {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.materiales-opciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 32px; 
+    width: 100%;
+}
+
+.materiales-opciones label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    white-space: nowrap; 
+}
+
+
+#guardar {
+    display: block; 
+    margin: 30px auto 0 auto; 
+    padding: 15px 80px; 
+    background-color: #1BAAA0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+#guardar:hover {
+    background-color: #168d87;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #1aab8a;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-extra {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
