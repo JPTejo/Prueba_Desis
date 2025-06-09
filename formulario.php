@@ -29,19 +29,19 @@
                 <div>
                     <label for="bodega">Bodega</label>
                     <select id="bodega" name="bodega">
-                        <option value="">Seleccione</option>
+                        <option value=""></option>
                     </select>
                 </div>
                 <div>
                     <label for="sucursal">Sucursal</label>
                     <select id="sucursal" name="sucursal">
-                        <option value="">Seleccione</option>
+                        <option value=""></option>
                     </select>
                 </div>
                 <div>
                     <label for="moneda">Moneda</label>
                     <select id="moneda" name="moneda">
-                        <option value="">Seleccione</option>
+                        <option value=""></option>
                     </select>
                 </div>
                 <div>
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             const selectBodega = document.getElementById('bodega');
-            selectBodega.innerHTML = '<option value="">Seleccione una bodega</option>';
+            selectBodega.innerHTML = '<option value=""></option>';
 
             data.forEach(function (bodega) {
                 const option = document.createElement('option');
@@ -104,7 +104,7 @@ function cargarMonedas() {
         .then(response => response.json())
         .then(data => {
             const selectMoneda = document.getElementById('moneda');
-            selectMoneda.innerHTML = '<option value="">Seleccione una moneda</option>';
+            selectMoneda.innerHTML = '<option value=""></option>';
             data.forEach(moneda => {
                 const option = document.createElement('option');
                 option.value = moneda.id;
@@ -120,7 +120,7 @@ function cargarSucursales() {
         .then(response => response.json())
         .then(data => {
             const selectSucursal = document.getElementById('sucursal');
-            selectSucursal.innerHTML = '<option value="">Seleccione una sucursal</option>';
+            selectSucursal.innerHTML = '<option value=""></option>';
             data.forEach(sucursal => {
                 const option = document.createElement('option');
                 option.value = sucursal.id;
